@@ -10,9 +10,9 @@ export default function WelcomeIndex() {
         <li>United Kingdom</li>
         <li>Mexico</li>
         <li>Canada</li>
-        <li>Russia</li>
+        {/* <li>Russia</li> */}
       </ul>
-      <p>To display universities for any of these countries, add "/country" in front of the url above eg. "/Nigeria" or "/United+States"</p>
+      <p>To display universities for any of these countries, add <code>/country</code> in front of the url above eg. <code>/Nigeria</code> or <code>/United+States</code></p>
     </>
   )
 }

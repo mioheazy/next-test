@@ -15,7 +15,7 @@ export default function Welcome(props: any) {
       <p>This is a nextJS app test by Muheez to display Universities in {country}</p>
       <ul>
         {universities.map((university: any) => {
-          return (<li key={university.name}><a href={university['web_pages'][0]} target='_blank'>{university.name}</a></li>)
+          return (<li key={university.name}><a href={university['web_pages'][0]} target='_blank' rel='noreferrer'>{university.name}</a></li>)
         })}
       </ul>
     </>
@@ -23,7 +23,7 @@ export default function Welcome(props: any) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const countries = ['Nigeria', 'United+Kingdom', 'Russia', 'United+States', 'Canada', 'Mexico']
+  const countries = ['Nigeria', 'United+Kingdom', 'United+States', 'Canada', 'Mexico']
   
   const paths = countries.map((country) => {
     return {
